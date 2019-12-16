@@ -56,6 +56,8 @@ class adjNet{
         int InsertEdge(int v1,int v2);//在末尾插入一条边
         void InsetVex(std::string str);//添加一个顶点,仅能从末尾追加
         std::string GetVexname(int v1);//通过名称定位
+        int GetVexindex(std::string str);//通过名字确认位置
+        int DeletEdge(int v1, int v2);//通过两个顶点序号删除
 };
 
 

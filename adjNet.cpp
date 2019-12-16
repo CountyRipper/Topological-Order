@@ -59,4 +59,11 @@ int adjNet::NextAdjVex(int v1,int v2){
     }
 }
 
-int adjNet::GetVexname(int v1)
+//获取顶点名称
+std::string adjNet::GetVexname(int v1){
+    return adjlist[v1].sname;
+}
+
+int adjNet::GetVexindex(std::string str){
+    return IndexVex(str);
+}
