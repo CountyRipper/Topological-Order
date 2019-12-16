@@ -4,6 +4,9 @@
 adjNet::adjNet(){
     adjlist.push_back(adjNode());
 }
+adjNet::~adjNet(){
+    
+}
 
 int adjNet::InsertEdge(int v1,int v2){
     int num =adjlist.size();
