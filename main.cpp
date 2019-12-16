@@ -18,6 +18,26 @@ int main(int, char**) {
     int t= topsort(graph,output);
     if(t==1){
         //拓扑排序成功
+        for(int i=0;i<graph.GetVexNum();i++){
+            if(graph.GetVexname(output[i])=="高等数学-II"){
+                std::cout<<"大一下学期："<<std::endl;
+            }
+            if(graph.GetVexname(output[i])=="数据结构"){
+                std::cout<<"大二上学期："<<std::endl;
+            }
+            if(graph.GetVexname(output[i])=="操作系统原理"){
+                std::cout<<"大二下学期："<<std::endl;
+            }
+            if(graph.GetVexname(output[i])=="数据库系统原理"){
+                std::cout<<"大三上学期："<<std::endl;
+            }
+            if(graph.GetVexname(output[i])=="计算机体系结构"){
+                std::cout<<"大三下学期："<<std::endl;
+            }
+            std::cout<<graph.GetVexname(output[i]);
+        }
+        std::cout<<std::endl;
+        std::cout<<"大四下学期："<<std::endl<<"毕业设计"<<std::endl;
     }
     else{
         //没有成功
