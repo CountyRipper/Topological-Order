@@ -54,7 +54,7 @@ class adjNet{
         int NextAdjVex(int v1,int v2);//返回v1相对于v2的下一个邻接点
         //int GetWeight(int v1,int v2);//返回两点间的权值
         int InsertEdge(int v1,int v2);//在末尾插入一条边
-        void InsetVex();//添加一个顶点,仅能从末尾追加
+        void InsetVex(std::string str);//添加一个顶点,仅能从末尾追加
         std::string GetVexname(int v1);//通过名称定位
 };
 
