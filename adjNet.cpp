@@ -54,6 +54,7 @@ int adjNet::NextAdjVex(int v1,int v2){
     for(n=adjlist[v1].nextedgeNode;n!=nullptr;n=n->nextedgeNode){
         if(n->adjnum==v2)break;
     }
+    n = n->nextedgeNode;
     if(n==nullptr){
         return -1;
     }

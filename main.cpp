@@ -22,7 +22,7 @@ int main(int, char**) {
             if(graph.GetVexname(output[i])=="高等数学-II"){
                 std::cout<<"大一下学期："<<std::endl;
             }
-            if(graph.GetVexname(output[i])=="数据结构"){
+            if(graph.GetVexname(output[i])=="离散数学"){
                 std::cout<<"大二上学期："<<std::endl;
             }
             if(graph.GetVexname(output[i])=="操作系统原理"){
@@ -41,6 +41,7 @@ int main(int, char**) {
     }
     else{
         //没有成功
+        std::cout<<"ERORR!"<<std::endl;
     }
 }
 void createGrap(adjNet &g){

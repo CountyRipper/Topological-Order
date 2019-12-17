@@ -10,7 +10,7 @@ void sumindegree(adjNet &g,int *indegree){
     for(int i=1;i<=g.GetVexNum();i++){
         for(int v1=g.FirstAdjVex(i);v1!=-1;v1=g.NextAdjVex(i,v1)){
             //v1为i的一个邻接点
-            indegree[i]++;
+            indegree[v1]++;
         }
     }
 }
